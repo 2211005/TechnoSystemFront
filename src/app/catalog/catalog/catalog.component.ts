@@ -22,7 +22,7 @@ export class CatalogComponent implements OnInit {
   selectedPost: any = null;
 
 
-  private apiUrl = `${environment.apiUrl}/posts` ; // URL del backend
+  private apiUrl = `${environment.apiUrl}/api/posts` ; // URL del backend
 
   constructor() {}
 
