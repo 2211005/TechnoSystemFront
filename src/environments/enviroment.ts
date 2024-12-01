@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    apiUrl: 'http://localhost:3000/api', // URL del backend para desarrollo
+    apiUrl: 'backend-pctechnosystem-production.up.railway.app', // URL del backend para desarrollo
   };
   
