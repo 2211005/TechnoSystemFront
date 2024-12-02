@@ -21,7 +21,7 @@ export class CatalogComponent implements OnInit {
   categories: string[] = []; // Lista de categorías para mostrar según el tipo
   selectedPost: any = null;
 
-  private imageUrl = `${environment.apiUrl}`;
+  imageUrl: string = environment.apiUrl;
   private apiUrl = `${environment.apiUrl}/api/posts` ; // URL del backend
 
   constructor() {}
