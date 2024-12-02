@@ -24,7 +24,7 @@ export class DashboardComponent {
   currentUser: any = { username: '', password: '' }; // Usuario actual para agregar/editar
   showUserForm: boolean = false; // Controlar la visualización del formulario de usuario
 
-  private imageUrl = `${environment.apiUrl}`;
+  imageUrl: string = environment.apiUrl;
   private postsUrl = `${environment.apiUrl}/api/posts`; // URL para posts
   private contactUrl = `${environment.apiUrl}/api/contact`; // URL para información de contacto
   private usersUrl = `${environment.apiUrl}/api/users`; // URL para usuarios
