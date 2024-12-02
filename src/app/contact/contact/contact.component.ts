@@ -21,7 +21,7 @@ export class ContactComponent {
   async sendEmail() {
     try {
       // Envía los datos del formulario al backend
-      await axios.post(`${environment.apiUrl}/contact/send-email`, this.form);
+      await axios.post(`${environment.apiUrl}/api/contact/send-email`, this.form);
 
       // Mostrar mensaje de éxito
       alert('Correo enviado correctamente.');
