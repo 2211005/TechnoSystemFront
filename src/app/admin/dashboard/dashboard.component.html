@@ -39,7 +39,7 @@
       <div class="posts-grid">
         <div *ngFor="let post of posts" class="post-card">
           <div class="post-content">
-            <img [src]="imgUrl + post.image_url" alt="{{ post.title }}" />
+            <img [src]="imageUrl + post.image_url" alt="{{ post.title }}" />
 
             <h3>{{ post.title }}</h3>
             <p class="description">{{ post.description }}</p>
