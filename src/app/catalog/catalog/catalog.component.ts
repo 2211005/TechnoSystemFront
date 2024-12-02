@@ -40,6 +40,7 @@ export class CatalogComponent implements OnInit {
 
   async loadPosts(): Promise<void> {
     try {
+      console.log(`Esta es la variable de entorno: ${this.apiUrl}`);
       const response = await axios.get(this.apiUrl);
       this.posts = response.data;
       this.filteredPosts = [...this.posts]; // Inicializa con todos los posts
