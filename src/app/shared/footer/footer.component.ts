@@ -20,7 +20,7 @@ export class FooterComponent implements OnInit {
 
   async loadContactInfo() {
     try {
-      const response = await axios.get(`${environment.apiUrl}/contact`);
+      const response = await axios.get(`${environment.apiUrl}/api/contact`);
       this.contactInfo = response.data[0];
     } catch (error) {
       console.error('Error al cargar la información de contacto:', error);
