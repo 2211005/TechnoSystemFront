@@ -89,8 +89,9 @@ export class ManagePostComponent implements OnInit {
       formData.append('type', this.post.type);
       formData.append('subtype', this.post.subtype);
       formData.append('author_id', this.post.author_id); // Agregar author_id
-      formData.append('image', this.post.image_url);
-      
+      if (this.selectedFile) {
+        formData.append('image', this.selectedFile);
+      }
 
       if (this.isEditMode) {
         await axios.put(`${this.postsUrl}/${this.post.id}`, formData, {
