@@ -40,7 +40,7 @@
     <div class="modal" *ngIf="selectedPost">
       <div class="modal-content">
         <span class="close" (click)="closeModal()">&times;</span>
-        <img [src]="'http://localhost:3000' + selectedPost.image_url" alt="{{ selectedPost.title }}" />
+        <img [src]="imageUrl + selectedPost.image_url" alt="{{ selectedPost.title }}" />
         <h2>{{ selectedPost.title }}</h2>
         <p>{{ selectedPost.description }}</p>
         <p class="price">Precio: ${{ selectedPost.price }}</p>
