@@ -23,7 +23,7 @@ export class LoginComponent {
     this.isLoading = true; // Activar indicador de carga
 
     try {
-      const response = await axios.post(`${environment.apiUrl}/auth/login`, {
+      const response = await axios.post(`${environment.apiUrl}/api/auth/login`, {
         username: this.username,
         password: this.password,
       });
