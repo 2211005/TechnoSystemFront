@@ -24,9 +24,10 @@ export class DashboardComponent {
   currentUser: any = { username: '', password: '' }; // Usuario actual para agregar/editar
   showUserForm: boolean = false; // Controlar la visualización del formulario de usuario
 
-  private postsUrl = `${environment.apiUrl}/posts`; // URL para posts
-  private contactUrl = `${environment.apiUrl}/contact`; // URL para información de contacto
-  private usersUrl = `${environment.apiUrl}/users`; // URL para usuarios
+  private imageUrl = `${environment.apiUrl}`;
+  private postsUrl = `${environment.apiUrl}/api/posts`; // URL para posts
+  private contactUrl = `${environment.apiUrl}/api/contact`; // URL para información de contacto
+  private usersUrl = `${environment.apiUrl}/api/users`; // URL para usuarios
 
   isSidebarCollapsed: boolean = false;
   constructor(private router: Router, private authService: AuthService) {}
