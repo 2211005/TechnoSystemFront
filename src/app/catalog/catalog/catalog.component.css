@@ -68,6 +68,8 @@
   }
 
   .product-card .description {
+    border:rgba(140, 140, 140, 0.7);
+    border-radius: 10px;
     max-height: 70px; /* Altura máxima */
     overflow-y: auto; /* Scroll vertical si excede la altura */
     padding: 5px; /* Espaciado interno */

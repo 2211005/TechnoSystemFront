@@ -17,7 +17,6 @@ export class ManagePostComponent implements OnInit {
   subtypes: string[] = [];
   isEditMode: boolean = false;
   selectedFile: File | null = null;
-  private imageUrl: string = `${environment.apiUrl}`
   private postsUrl: string = `${environment.apiUrl}/api/posts`;
   private usersUrl: string = `${environment.apiUrl}/api/users`; // URL para obtener usuarios
   users: any[] = []; // Lista de usuarios disponibles
